@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim</title>
+    <link rel="stylesheet" href="iletisim2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+  />
+  <script
+    src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js">
+  </script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1 class="logo">Okur Evi</h1>
+        <p class="subtitle">A.Karagülle</p>
+        <nav>
+            <ul>
+                <li><a href="../ana sayfa/anasayfa2.html">Ana Sayfa </a></li>
+                <li><a href="../kitap önerileri/kitap_öneri2.html">Kitap Tavsiyeleri</a></li>
+               
+                <li><a href="../kitaplar/yazar_oneri1.html">Yazarlar</a></li>
+                <li><a href="../iletişim/iletisim2.html">İletişim</a></li>
+                <li><a href="../blog sayfası/blog1.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="social-bar">
+        <a href="https://facebook.com" target="_blank" class="social-icon facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank" class="social-icon twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank" class="social-icon instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="mailto:someone@example.com" class="social-icon email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+
+   
+    </div>
+    <div class="container">
+      <h1>Bize Ulaşın</h1>
+      <div class="underline"></div>
+  
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Ad Soyad" required />
+        <input type="email" id="email" placeholder="E-posta" required />
+        <input type="text" id="phone" placeholder="Telefon (İsteğe Bağlı)" />
+        <textarea id="message" placeholder="Mesajınız" rows="5" required></textarea>
+        <button type="submit">Gönder</button>
+        <p id="formMessage" class="message"></p>
+      </form>
+  
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12035.062406050324!2d28.9769604!3d41.0053217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab9f6b1f1d1c5%3A0x6c2063dfb25b15b!2sİstanbul!5e0!3m2!1str!2str!4v1614175412345" 
+          width="100%" 
+          height="300" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+      
+ 
+
+
+
+</body>
+<script src="iletisim2.js"></script>
+
+
+</html>

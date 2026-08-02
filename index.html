@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Sayfa</title>
+    <link rel="stylesheet" href="anasayfa2.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">    
+ 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+  />
+  <script
+    src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js">
+  </script>
+</head>
+<body>
+    <header>
+        <h1 class="logo">Okur Evi</h1>
+        <p class="subtitle">A.Karagülle</p>
+        <nav>
+            <ul>
+                <li><a href="../ana sayfa/anasayfa2.html">Ana Sayfa </a></li>
+                <li><a href="../kitap önerileri/kitap_öneri2.html">Kitap Tavsiyeleri</a></li>
+                <li><a href="../kitaplar/yazar_oneri1.html">Yazarlar</a></li>
+                <li><a href="../iletişim/iletisim2.html">İletişim</a></li>
+                <li><a href="../blog sayfası/blog1.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="social-bar">
+        <a href="https://facebook.com" target="_blank" class="social-icon facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank" class="social-icon twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank" class="social-icon instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="mailto:someone@example.com" class="social-icon email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+      
+    <section class="book-gallery">
+        <button class="prev">‹</button>
+        <h2>Kitap Galerisi</h2>
+        <div class="gallery-container">
+            <div class="book-card" onclick="openPopup('b1')">
+                <div class="book-cover" style="background-image: url('resimler/kucuk-prens-antoine-de-saint-exupery-barkod-375983-43-B.jpg');"></div>
+                <h3>Küçük Prens</h3>
+                <p>Eserde, bir çocuğun gözünden büyüklerin dünyası anlatılır.</p>
+            </div>
+
+            <div class="book-card" onclick="openPopup('b2')">
+                <div class="book-cover" style="background-image: url('resimler/Gencler-ICin-Nutuk-resim-317.jpg');"></div>
+                <h3>Nutuk</h3>
+                <p> Atatürk’ün  kendi ağzından anlattığı, belgesel niteliğinde bir eserdir.
+
+                </p>
+            </div>
+
+            <div class="book-card" onclick="openPopup('b3')">
+                <div class="book-cover" style="background-image: url('resimler/yeraltından\ notlar.jpg');"></div>
+                <h3>Yeraltından Notlar</h3>
+                <p>gerçek dünyadan kendini soyutlamış bir kişinin iç çatışmalarını ve hezeyanlarını konu alır</p>
+            </div>
+            <div class="book-card" onclick="openPopup('b4')">
+                <div class="book-cover" style="background-image: url('resimler/kitabevi.jpg');"></div>
+                <h3>Hyunam - Dong Kitabevi</h3>
+                <p> “Ruhunu emen” bir hayattan kaçmak için sakin bir mahallede bir kitapçı açar.
+                </p>
+            </div>
+            <div class="book-card" onclick="openPopup('b5')">
+                <div class="book-cover" style="background-image: url('resimler/çalıkusu.jpg');"></div>
+                <h3>Çalıkuşu</h3>
+                <p> "Çalıkuşu", Feride'nin zorluklarla dolu yaşamını, öğretmenlik yaptığı köydeki insanlarla olan ilişkilerini ve aşkını anlatır.
+                
+                </p>
+            </div>
+            <div class="book-card" onclick="openPopup('b6')">
+              <div class="book-cover" style="background-image: url('resimler/kırmızı\ saçlı\ kadın.jpg');"></div>
+              <h3>Kırmızı Saçlı Kadın</h3>
+              <p> "Kırmızı Saçlı Kadın", babasıyla ilişkisi ve bir ustayla yaşadığı çatışma üzerinden kimlik arayışını konu alır.
+              
+              </p>
+          </div>
+          <div class="book-card" onclick="openPopup('b7')">
+            <div class="book-cover" style="background-image: url('resimler/tesirsiz\ paçalar.jpg');"></div>
+            <h3>Tesirsiz Parçalar</h3>
+            <p> Tesirsiz Parçalar, Ali Lidar'ın günlük yaşam, edebiyat ve kültürel gözlemlerini samimi bir dille paylaştığı deneme kitabıdır.    
+            </p>
+        </div>
+
+
+            <button class="next">›</button>
+        </div>
+    </section>
+
+    <!-- POP-UP MODAL -->
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <div id="popup-details"></div>
+        </div>
+    </div>
+
+    <div style="text-align: center; margin: 30px 0;">
+        <h3>Kitaplardan İlham Verici Sözler</h3>
+        <p style="font-style: italic;">“Bir insanın ruhunu anlamak istiyorsan, onun okuduğu kitaplara bak.” — Haruki Murakami</p>
+ </div>
+      
+
+    <div id="map" style="height: 500px; width: 100%; margin: 40px 0;"></div>
+
+
+
+</body>
+<script src="anasayfa2.js"></script>
+<script>
+    const gallery = document.querySelector('.gallery-container');
+    const nextBtn = document.querySelector('.next');
+    const prevBtn = document.querySelector('.prev');
+  
+    nextBtn.addEventListener('click', () => {
+      gallery.scrollBy({ left: 300, behavior: 'smooth' });
+    });
+  
+    prevBtn.addEventListener('click', () => {
+      gallery.scrollBy({ left: -300, behavior: 'smooth' });
+    });
+  
+    // 5 saniyede bir otomatik geçiş
+    setInterval(() => {
+      gallery.scrollBy({ left: 300, behavior: 'smooth' });
+    }, 5000);
+  </script>
+  
+
+</html>
