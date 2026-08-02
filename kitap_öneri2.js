@@ -57,7 +57,7 @@ const books = [
     description: "Yunan mitolojisinin güçlü cadısı Kirke’nin gözünden tanrıların dünyasına ve kendi kimliğini bulma mücadelesine odaklanan modern bir mitolojik yeniden anlatım.",
     buyLink: "https://www.bkmkitap.com/ben-kirke?waw_keyword=ben%20kirke&_gl=1*1bk0cl7*_gcl_aw*R0NMLjE3NDcwNjMzMTYuQ2p3S0NBand1SWJCQmhCdkVpd0FzTnlwdmJ4SEpCNU1SSTVMRmljS254RFhEdzVnZW16dlA1SHo3UmZQdmRnZ1dPclhZU1ZXU1ByQWh4b0NFVWdRQXZEX0J3RQ..*_gcl_au*MTg2NTU4MDk5NC4xNzQ3MDYzMzE5",
     mood: "energetic",
-    cover: "../kitap önerileri/kitap kapak foto/ben kirke.jpg"
+    cover: "kitap kapak foto/ben kirke.jpg"
 },
 
 {
