@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="yazar_oneri1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Leaflet CSS -->   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+  />
+  <script
+    src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js">
+  </script>
+</head>
+<body>
+    <header>
+        <h1 class="logo">Okur Evi</h1>
+        <p class="subtitle">A.Karagülle</p>
+        <nav>
+            <ul>
+                <li><a href="../ana sayfa/anasayfa2.html">Ana Sayfa</a></li>
+                
+                <li><a href="../kitap önerileri/kitap_öneri2.html">Kitap Tavsiyeleri</a></li>
+                <li><a href="../kitaplar/yazar_oneri1.html">Yazarlar</a></li>
+                <li><a href="../iletişim/iletisim2.html">İletişim</a></li>
+                <li><a href="../blog sayfası/blog1.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>    
+
+    <div class="social-bar">
+        <a href="https://facebook.com" target="_blank" class="social-icon facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank" class="social-icon twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank" class="social-icon instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="mailto:someone@example.com" class="social-icon email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+
+      <div class="galeri">
+        <div class="yazar-karti" onclick="openModal('dostoyevski')">
+            <img src="dos..jpg" alt="Dostoyevski">
+            <p>Fyodor Dostoyevski</p>
+        </div>
+        <div class="yazar-karti" onclick="openModal('halide')">
+            <img src="Halide_adivar.jpg" alt="Halide e. Adıvar">
+            <p>Halide Edib Adıvar</p>
+        </div>
+    
+        <div class="yazar-karti" onclick="openModal('stephen')">
+            <img src="stephen king.jpg" alt="stephen">
+            <p>Stephen King</p>
+        </div>
+
+        <div class="yazar-karti" onclick="openModal('ayse')">
+            <img src="ayse-kulin.jpg" alt="Ayşe Kulin">
+            <p>Ayşe Kulin</p>
+        </div>
+       
+        <div class="yazar-karti" onclick="openModal('Oguz_atay')">
+            <img src="oguz atay.jpg" alt="Oguz Atay">
+            <p>Oğuz Atay</p>
+        </div>
+        
+        <div class="yazar-karti" onclick="openModal('jane')">
+            <img src="jane austen.jpg" alt="Jane Austen">
+            <p>Jane Austen</p>
+        </div>
+
+        <div class="yazar-karti" onclick="openModal('sabahattin')">
+            <img src="sabahatttinali.jpg" alt="Sabahattin Ali">
+            <p>Sabahattin Ali</p>
+        </div>
+    
+      
+        <div class="yazar-karti" onclick="openModal('tomris')">
+            <img src="tomrisuar.jpg" alt="Tomris Uyar">
+            <p>Tomris Uyar</p>
+        </div>
+        <div class="yazar-karti" onclick="openModal('yasar')">
+            <img src="yasarkemal.jpg" alt="Yaşar Kemal">
+            <p>Yaşar Kemal</p>
+        </div>
+        <div class="yazar-karti" onclick="openModal('elifsafak')">
+            <img src="elifsafak_8377893fb0e733560c9cc4ecb0b501f5.jpg" alt="elif safak">
+            <p>Elif Safak</p>
+        </div>
+        <div class="yazar-karti" onclick="openModal('murat')">
+            <img src="muratgulsoy_590_590_1.jpg" alt="Murat Gülsoy">
+            <p>Murat Gülsoy</p>
+        </div>
+        <div class="yazar-karti" onclick="openModal('sevgi')">
+            <img src="Sevgi-Soysal-.jpg" alt="sevgi soysal">
+            <p>Sevgi Soysal</p>
+        </div>
+        <div class="yazar-karti" onclick="openModal('baris')">
+            <img src="Baris-Bicakci.jpeg" alt="">
+            <p>Barış Bıçakçı</p>
+        </div>
+        <div class="yazar-karti" onclick="openModal('buket')">
+            <img src="buket-uzuner3.jpg" alt="">
+            <p>Buket Uzuner</p>
+        </div>
+
+        
+    </div>
+
+  
+    <div id="modal" class="modal">
+        <div class="modal-icerik">
+            <span class="kapat" onclick="closeModal()">&times;</span>
+            <div id="modal-icerik-detay"></div>
+        </div>
+    </div>
+
+
+
+</body>
+<script src="yazar_oneri1.js"></script>
+</html>
