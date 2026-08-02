@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim</title>
+    <link rel="stylesheet" href="kitap_öneri2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Leaflet CSS -->   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+   
+
+ 
+</head>
+<body>
+    <header>
+        <h1 class="logo">Okur Evi</h1>
+        <p class="subtitle">A.Karagülle</p>
+        <nav>
+            <ul>
+                <li><a href="../ana sayfa/anasayfa2.html">Ana Sayfa </a></li>
+                <li><a href="../kitap önerileri/kitap_öneri2.html">kitap Tavsiyeleri</a></li>
+               
+                <li><a href="../kitaplar/yazar_oneri1.html">Yazarlar</a></li>
+                <li><a href="../iletişim/iletisim2.html">İletişim</a></li>
+                <li><a href="../blog sayfası/blog1.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="social-bar">
+      <a href="https://facebook.com" target="_blank" class="social-icon facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://twitter.com" target="_blank" class="social-icon twitter">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://instagram.com" target="_blank" class="social-icon instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="mailto:someone@example.com" class="social-icon email">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+      
+      <div>
+      <div class="card today-card">
+      <h2>Bugün Ne Okumak İstersin?</h2>
+      <div class="mood-selector">
+          <div class="mood-option" data-mood="happy">
+              <button>😊 Mutlu</button>
+              <div class="mood-book-result"></div>
+          </div>
+          <div class="mood-option" data-mood="sad">
+              <button>😢 Hüzünlü</button>
+              <div class="mood-book-result"></div>
+          </div>
+          <div class="mood-option" data-mood="energetic">
+              <button>⚡ Enerjik</button>
+              <div class="mood-book-result"></div>
+          </div>
+          <div class="mood-option" data-mood="ask">
+            <button>💟 Romantik</button>
+            <div class="mood-book-result"></div>
+        </div>
+         </div> </div> 
+            <div class="card popular-card">
+                <h2>⭐ Popüler Kitaplar</h2>
+                <div class="popular-books">
+                    <div class="book-cover" onclick="showBookInfo(36)">
+                        <img src="../kitap önerileri/kitap kapak foto/sokratesinsavunması.jpg" alt="">
+                        <span>Sokrates'in Savunması</span>
+                    </div>
+                    <!-- Diğer kitaplar -->
+                </div>
+            </div>
+       </div>
+       <div class="temizle"></div>
+
+        <!-- KİTAPLIK  -->
+       
+        <div class="card bookshelf-card">
+            <h2>📖 Kitaplığım</h2>
+            <div class="book-covers">
+          
+            
+                <!-- Diğer kitaplar -->
+            </div>
+
+        </div>
+    </div>
+
+    <!-- MODAL -->
+    <div class="modal" id="book-modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modal-cover" src="" alt="Kitap Kapağı" class="modal-cover">
+            <div class="modal-info">
+                <h2 id="modal-title"></h2>
+                <p><strong>Yazar:</strong> <span id="modal-author"></span></p>
+                <p><strong>Yıl:</strong> <span id="modal-year"></span></p>
+                <p><strong>Tür:</strong> <span id="modal-genre"></span></p>
+                <p id="modal-desc"></p>
+                <a href="#" id="modal-link" class="buy-btn">Satın Al</a>
+            </div>
+        </div>
+    </di
+      
+          <script src="script.js"></script>
+      </body>
+      </html>
+</body>
+<script src="kitap_öneri2.js"></script>
+
+
+</html>
